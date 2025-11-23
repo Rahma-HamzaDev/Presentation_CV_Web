@@ -1,0 +1,246 @@
+:root {
+  --bg: #0f1724;
+  --card: #0b1220;
+  --muted: #9aa6b2;
+  --accent: #6ee7b7;
+  --accent-2: #60a5fa;
+  --glass: rgba(255, 255, 255, 0.03);
+  --maxw: 1100px;
+  --radius: 14px;
+  --gap: 18px;
+  font-family: Inter, ui-sans-serif, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  background: linear-gradient(180deg, #071024 0%, #071a2a 100%);
+  color: #e6eef6;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.wrap {
+  max-width: 1150px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.avatar {
+  width: 110px;
+  height: 140px;
+  border-radius: 50%;
+  /* cercle parfait */
+  object-fit: cover;
+  border: 5px solid #cad2ce;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.title p {
+  color: #9aa6b2;
+  margin: 5px 0 0;
+}
+
+.links .btn {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #6ee7b7;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 18px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #60a5fa;
+  margin-top: 0;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 6px 10px;
+  border-radius: 8px;
+  color: #9aa6b2;
+  font-size: 13px;
+}
+
+.timeline .job {
+  margin-bottom: 10px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 15px;
+}
+
+.project {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.project h5 {
+  margin: 0 0 5px;
+  color: #6ee7b7;
+}
+
+.project p {
+  color: #b3c0cf;
+  font-size: 14px;
+}
+
+.media video,
+.media img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+footer {
+  text-align: center;
+  color: #9aa6b2;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+footer a {
+  color: #6ee7b7;
+  text-decoration: none;
+}
+
+.mail {
+  color: white;
+  text-decoration: none;
+}
+/* === Style des mots-clés (badges) === */
+.keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.tag {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #398265;
+  padding: 5px 10px;
+  font-size: 13px;
+  border-radius: 20px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: all 0.25s ease;
+  cursor: default;
+}
+
+.tag:hover {
+  background: linear-gradient(135deg, #10b981, #2563eb);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+}
+  .social-links {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #e7dede;
+    margin-top: 15px;
+  }
+
+  .social-links p {
+    margin: 8px 0;
+  }
+
+  .social-links a {
+    color: #0078ff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+  }
+
+  .social-links a:hover {
+    color: #1f3cb0;
+    border-bottom: 2px solid #1f3cb0;
+  }
+
+  .icon {
+    margin-right: 8px;
+    color: #ede7e7;
+  }
+  /* === Style des certificats === */
+.certifications {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 8px;
+}
+
+.cert {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 12px 14px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent);
+    transition: all 0.3s ease;
+}
+
+.cert:hover {
+    background: rgba(110, 231, 183, 0.08);
+    border-left-color: var(--accent-2);
+    transform: translateX(4px);
+}
+
+.cert strong {
+    color: #e6eef6;
+    font-size: 15px;
+}
+
+.issuer {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.year {
+    color: #9aa6b2;
+    font-size: 14px;
+}
